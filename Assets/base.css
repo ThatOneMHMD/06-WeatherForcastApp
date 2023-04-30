@@ -1,0 +1,213 @@
+/* global styling */
+* {
+
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+/* nav bar styling */
+nav {
+
+  background-color: #545454;
+  color: white;
+  width: 100%;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* styling for many classes: container, row (2,3,4), column, float-R/L. Note that while row2 and row3 have the same styling with normal screen size, it is different when the size is adjusted */
+.container{
+
+  padding: 20px;
+}
+
+.row {
+
+  display: flex;
+  flex-direction: row;
+  background-color: #545454;
+  width: 100%;
+  gap: 20px;
+}
+
+.row2{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.row3{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.row4{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+/* styling for the h2 inside the row4 class */
+.row4 h2{
+
+  height: 50px;
+}
+
+.column {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.float-L {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: antiquewhite;
+  border-radius: 2%;
+  width: 40%;
+  padding: 20px;
+}
+
+.float-R {
+
+  background-color: antiquewhite;
+  border-radius: 2%;
+  display: block;
+  padding: 20px;
+}
+
+/* this is a special class that is being added to the divs created with js and does not specifically exist in out html page */
+.dayCard {
+
+  display: block;
+  background-color: #545454;
+  color: white;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+/* font size for h1 */
+h1{
+
+  font-size: 24px;  
+}
+
+/* font size for h2 */
+h2{
+
+  font-size: 20px;
+}
+
+/* styling for the input box (only got city name in our html */
+input{
+
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  width: 100%;
+
+}
+
+/* styling for the select options, in our case it's the metric or imperial (only got one so no id required) */
+select{
+
+  padding: 5px;
+  width: 150px;
+  margin-bottom: 5px;
+  font-size: 18px;
+
+}
+
+/* styling for the search button (only got one hence no need for a specific id) */
+button{
+
+  height: 37px;
+  font-size: 18px;
+
+}
+
+/* styling for the corrersponding ids: */
+#imgIcon{
+
+  width: 60px;
+  height: 60px;
+}
+
+#searchHistory {
+
+  display: block;
+}
+
+#searchHistory li:hover{
+
+  font-size: larger;
+  font-weight: bold;
+}
+
+#currentWeather, #futureWeather{
+
+  display: block;
+}
+
+#futureDay {
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* applies these styles when the screen size is adjusted! */
+@media screen and (max-width: 1300px) {
+
+  .row{
+
+    display: block;
+  }
+
+  .float-L {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-radius: 2%;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .row3{
+
+    display: block;
+    width: 50%;
+    border-left: solid 2px;
+    padding-left: 30px;
+  }
+
+  .column{
+
+    width: 40%;
+  }
+
+  .futureWeather {
+
+    display: flex;
+    flex-wrap: wrap; 
+    width: 250px;
+  }
+
+  .dayCard{
+
+    width: 250px !important;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+}

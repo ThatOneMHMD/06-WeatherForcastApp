@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- styling sheet (css) -->
+  <link rel="stylesheet" href="./Assets/base.css">
+  <title> Weather Forcast </title>
+</head>
+<body>
+
+  <nav>
+
+    <h1> Weather Forcast Dashboard </h1>
+
+  </nav>
+
+  <div class="container row">
+
+    <div class="float-L">
+
+      <div class="column">
+
+        <h2> Search for a city: </h2>
+
+        <input id="searchInput" type="text" placeholder="City Name">
+
+        <div id="inputDiv"></div>
+        
+        <div class="row2">
+  
+          <select id="units">
+            <option value="imperial"> imperial</option>
+            <option value="metric"> metric </option>
+          </select>
+          <button id="searchBtn"> Search</button>
+  
+        </div>
+  
+      </div>
+
+      <div class="row3">
+
+        <div class="row4">
+
+          <h2> Search History:</h2>
+
+          <div id="searchHistory"></div>
+
+
+        </div>
+    
+  
+      </div>
+
+    </div>
+
+    <div class="row float-R">
+
+      <div id="currentWeather">
+
+        <div class="row2">
+
+          <h2 id="cityName"> 
+          
+            City Name (YYYY-MM-DD) (icon) 
+          
+          </h2>
+          
+          <div id="icon" style="visibility: hidden;"><img id="imgIcon" src="" alt="Weather icon"></div>
+  
+        </div>
+
+        <div id="temp"> temp: </div>
+        <div id="wind"> wind speed: </div>
+        <div id="humidity"> humidity: </div>
+        <br>
+
+      </div>
+
+      <div id="futureWeather">
+
+        <h2> 5-Day Forcast</h2>
+
+        <div id="futureDay"></div>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- out js script -->
+  <script src="./Assets/base.js"></script>
+  <!-- Dayjs script -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs"></script>
+  
+</body>
+</html>
