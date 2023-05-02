@@ -3,7 +3,7 @@
 
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* nav bar styling */
@@ -196,18 +196,180 @@ button{
     width: 40%;
   }
 
-  .futureWeather {
-
-    display: flex;
-    flex-wrap: wrap; 
-    width: 250px;
-  }
-
   .dayCard{
 
     width: 250px !important;
     display: flex;
     flex-wrap: wrap; 
+  }
+  
+}
+
+/* applies these styles when the screen size is adjusted! */
+@media screen and (max-width: 920px) {
+
+  nav{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .row{
+
+    display: block;
+  }
+
+  .float-L {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .float-R {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row3{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    border: none;
+    border-top: solid 2px;
+    padding-top: 10px;
+    margin-top: 30px;
+  }
+
+  .column{
+
+    width: 90%;
+    text-align: center;
+
+    
+  }
+
+  .futureWeather {
+
+    display: block;
+  }
+
+  #futureDay {
+
+    display: block;
+  }
+
+  .dayCard{
+
+    width: 80vw !important;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+  
+}
+
+/* applies these styles when the screen size is adjusted! */
+@media screen and (max-width: 400px) {
+
+  nav h1{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .row{
+
+    display: block;
+    background-color: antiquewhite;
+    width: 100%;
+  }
+
+  .float-L {
+    
+    width: 100%;
+  }
+
+  select{
+
+    width: auto;
+  }
+
+  .float-R {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row2{
+
+    display: block;
+    width: 100%;
+  }
+
+  .row3{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-top: solid 2px;
+    padding-top: 10px;
+    margin-top: 30px;
+  }
+
+  .row4{
+
+    width: 70vw;
+    display: block;
+    text-align: left;
+  }
+
+  .column{
+
+    width: 120%;
+    text-align: center;
+    display: block;
+
+    
+  }
+
+  .futureWeather {
+
+    display: block;
+  }
+
+  #futureDay {
+
+    display: block;
+  }
+
+  .dayCard{
+
+    width: 80vw !important;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
   }
   
 }
