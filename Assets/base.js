@@ -174,18 +174,15 @@ function getWeather (){
             <div> Humidity: ${humidity} % </div>
             </div>
             `;
-
         }
 
         // futureDay is the one representing out html, it is being filled with futureHTML!
         futureDay.innerHTML = futureHTML;
-
     })
     .catch(error => {
         // Handle any errors
         console.error(error);
     });
-
 };
 
 
@@ -278,15 +275,15 @@ window.onload = function() {
 // Introduce the search function, which gets the value of the user's search input, gets the weather for that search term, and adds the search term to the search history:
 function search() {
 
-  var searchTerm = searchInput.value.trim();
+    var searchTerm = searchInput.value.trim();
 
-  // If the search term is not empty, then do this:
-  if (searchTerm !== "") {
-    // Get the weather for the search term
-    getWeather(searchTerm);
-    // Add the search term to the search history
-    addSearchToHistory();
-  }
+    // If the search term is not empty, then do this:
+    if (searchTerm !== "") {
+        // Get the weather for the search term
+        getWeather(searchTerm);
+        // Add the search term to the search history
+        addSearchToHistory();
+    }
 };
 
 // When the search button is clicked, the search function is called!
@@ -294,7 +291,7 @@ searchBtn.addEventListener("click", search);
 
 // When the search Enter key is pressed, the search function is called!
 searchInput.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    search();
-  }
+    if (event.key === "Enter") {
+        search();
+    }
 });
