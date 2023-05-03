@@ -23,6 +23,8 @@ This is a webpage for the Weather Forcast App. Once opened, the user is presente
 - When the user inputs an invalid city name, a red text appear under the search box reading "Invalid city name, please try again!" and this input is not saved into the search history
 - When the user selects between imperial and metric, the units of measurements are converted to match chosen units (for example, from MPH to KPH and vice versa)
 - When the user inputs city and the country code turns out to be different from their expectations, they are able to actively search for the desired city by following the city name with a comma and a two-letter Country Code (for example: Ottawa, CA)
+- When the number of city names in the search history exceeds 10, only the most recent 10 will remain while the last searched will be deleted
+- When the user inputs a new city name, it will appear at the top of the search history. Additionally, this will also occur if the user searches for a city that is already included in the search history or simply clicks on it; no replicas of the city names will exist  
 
 ## Note 
 
