@@ -1,32 +1,34 @@
-# Weather Forcast App
+# Weather Forcast App 
+
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## LIVE URL
 
-UPDATE THIS
+UPDATE THIS Later
 
 ## Description
 
-This is a webpage for the improved JavaScript Password Generator. Once opened, the user is presented with an application that enables them to generate random passwords based on criteria that they’ve selected. This serves as a measure of increasing security. Additionally, this app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished, responsive user interface that adapts to multiple screen sizes.
+This is a webpage for the Weather Forcast App. Once opened, the user is presented with an application that enables them to check the weather outlook for multiple cities so that they can plan trips accordingly. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-## Screenshot of the updated website
+## Screenshot of the website
 
-![03-javascript-homework-demo](https://user-images.githubusercontent.com/126360257/226629203-c195fa4a-f188-452b-9f21-3de7ad46d479.png)
-
+![weaather forcast app](https://user-images.githubusercontent.com/126360257/236041982-4c2da339-9b20-4981-a79e-61c3a361c3ae.png)
 
 ## Features
 
-- When the "Generate Password" button is clicked; the user is presented with a series of prompts for password criteria.
-- When prompted for the length of the password; the user chooses a length of at least 8 characters and no more than 128 characters. 
-- If the length chosen is smaller than 8 or larger than 128; then the user will be alerted.
-- When prompted for password criteria; the user selects which criteria to include in the password. The use has the ability to confirm whether or not to include lowercase characters, uppercase characters, numeric values, and/or special characters. 
-- If the user chooses none of the options; then the user will be alerted.
-- When all prompts are answered; then a password is generated that matches the selected criteria. The password gets displayed inside the text box and is easy to copy by user
+- When the user searches for a city by inputing the city name into the input box, they are presented with current and future conditions for that city and that city is added to the search history
+- when the user views the current weather conditions for that city, they are presented with the city name (and matching country code), the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
+- When the user views future weather conditions for that city, they are presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+- When the user clicks on a city in the search history, they are again presented with current and future conditions for that city
+- When the user inputs an invalid city name, a red text appear under the search box reading "Invalid city name, please try again!" and this input is not saved into the search history
+- When the user selects between imperial and metric, the units of measurements are converted to match chosen units (for example, from MPH to KPH and vice versa)
+- When the user inputs city and the country code turns out to be different from their expectations, they are able to actively search for the desired city by following the city name with a comma and a two-letter Country Code (for example: Ottawa, CA)
 
 ## Note 
 
 To access the base HTML file of the webpage, click on the index.html file above! The CSS and JavaScript files can be found in the assets file!
 
-## License
+## License 
 
 MIT
 
@@ -35,5 +37,5 @@ MIT
 ThatOneMHMD - The creator of this website!
 (Link: https://github.com/ThatOneMHMD)
 
-Xandromus - The provider of the starter code!
-(Link: https://github.com/coding-boot-camp/friendly-parakeet.git)
+Bootcamp - The provider of the starter code!
+(Link: https://utoronto.bootcampcontent.com/utoronto-bootcamp/UTOR-VIRT-FSF-PT-02-2023-U-LOLC/-/tree/main/06-Server-Side-APIs/02-Challenge)
