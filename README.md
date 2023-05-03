@@ -4,7 +4,7 @@
 
 ## LIVE URL
 
-[Live URL for weather app](https://thatonemhmd.github.io/06-WeatherForcastApp/)
+https://thatonemhmd.github.io/06-WeatherForcastApp/
 
 ## Description
 
